@@ -7,8 +7,8 @@ const Timer = {
 
     timeToMinutes: time => Math.floor(time / 60),
     timeToSeconds: time => time % 60,
-
     formatTime: time => String(time).padStart(2, '0'),
+
     init(time) {
         Timer.time = time || Timer.time
         Timer.currentTime = Timer.time

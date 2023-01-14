@@ -4,13 +4,8 @@ import { Timer } from './Timer.js'
 const App = {
     async start() {
         try {
-            const time = 25 * 60;
-            Timer.init({ time });
-            // await Notifyer.init();
-            // Notifyer.notify({
-            //     title: "Hora do Post",
-            //     body: "Crie algum conteudo para ajudar a comunidade"
-            // });
+            const time = .1 * 60;
+            Timer.init(time);
         } catch (erro) {
             console.log(erro.message)
         }
